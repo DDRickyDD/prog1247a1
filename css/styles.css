@@ -1,0 +1,132 @@
+/*Ricky Deng 8931752*/
+
+html{
+     /* font shorthand 6 propteries  
+        font-style - normal, italic, oblique
+        font-variant - normal, small-caps
+        font-weight  - normal, bold, 100 - 900
+        font-size/line-height
+        font-family
+        */
+        font-style : normal;
+        font-variant: normal;
+        font-weight : normal;
+        font-size : 20px;
+        line-height: .5em;
+        font-family : Arial, Helvetica, sans-serif;
+   
+        font :normal 20px/1.5 Arial, "Arial", Helvetica, sans-serif;
+ 
+        color:black; /* Set text color to black */
+}
+
+h1, h2 { /* a multiple element list selector for the h1 and h2*/
+    font-variant: small-caps;/* h1 and h2 headings will be displayed in small-caps*/
+    color:darkmagenta; /* set the font-colour using a named colour*/
+    text-align: center;
+
+}
+
+figcaption {
+    font-weight: bold; /* figcaption elements will be displayed in bold*/
+    font-variant: small-caps;/* figcaption elements will be displayed in small-caps*/
+    font-size: 1.1rem; /* the font size will be 10% larger the root element’s font size.  */
+}
+
+q {
+    font-style: italic; /*q elements will be displayed in italic */
+    font-family: cursive;/*the font family will be cursive */
+    font-size: 1.2rem; /* the font size will be 20% larger than the root element’s font size*/
+}
+
+/*Descendant combinator selector*/
+footer  p {
+    font-size: 0.6rem; /* the footer will have a font size that is 60% of the root element’s font size */
+}
+
+body {
+    width: 80%; /* relative to its parent */
+    max-width: 1200px; /* absolute unit */
+    padding : 0.5rem; /*rem releative to root element font size*/
+    margin : 0 auto; /*margin set to auto for right and left center elemnts inside their parent*/
+    
+}
+
+.main-section-figure img{ /* using a class descendant selector ruleset*/
+
+    width : 60%; /*set width to 80% of the parent element*/
+    height : 60%; /*set height to 80% of the parent element*/
+    /*border radius must be larder than then padding*/
+    border-radius: 1rem;   /*relevative to the root units, round the corners of the images*/ 
+    padding : 0.5rem; /*sets padding useing units relevative to the root units*/
+}
+
+.main-section-figure {
+    width : 60%; /*set width to 80% of the parent element*/
+    height : 60%; /*set height to 80% of the parent element*/
+    text-align : center; 
+    padding: 1rem;/* padding on all sides, relative to the root element */
+    margin :0.8rem auto; /* top and bottom margins of 0.8rem, horizontal centering */
+}
+
+iframe {
+    width: 80%; /* relative to its parent  */
+    height: 80%; /* relative to its parent  */
+    border: 0.1rem solid rgb(20, 117, 3); 
+    border-radius: 1rem; /*/*relevative to the root units, round the corners*/
+    padding: 0.5rem; /* same padding to the top, right, bottom, and left sides of the iframe elements*/
+}
+
+header, footer {  /* using a multiple element list selector for header and footer elements.  */
+    text-align: center; 
+    background: linear-gradient(to right, rgb(0, 123, 255), rgb(0, 255, 123));/*set a gradient background for the header and footer elements*/
+
+}
+
+
+main section{ /* using class element selector for the sections nested in the main*/
+    text-align: center;
+    padding: 0.5rem;/* padding on all sides, relative to the root element */
+    background-color: hsla(120, 100%, 90%, 1);/* set color using hsla methode*/
+}
+
+#bio { /*using an id selector for the blockquote with id bio */
+    text-align: left;
+}
+
+#quote q{ /*using an id selector for blockquote elements with a nested q element */
+    padding: 0.5em; /* padding on all sides, relative to the parent element */
+    border: 0.1rem solid #031a6e;
+    box-shadow: 0.5em 0.5em 0.5em 0em gray;/*0.5em values are relative to the font size of the parent element, and the color is set to gray*/
+}
+
+
+header, footer { /* the multiple element list selector for the header, footer*/
+    border: 0.01rem inset #007ACC;/* border with a width of 0.01rem (relative to the root font size), a inset style, and a color of blue*/
+}
+
+#relative-path-image img{ /* using the figure element with the relative path image using the id selector */
+    border: 0.1rem solid rgb(9, 93, 90);
+    border-radius: 1rem;   /*relevative to the root units, round the corners of the images*/ 
+    padding : 0.5rem; /*sets padding useing units relevative to the root units*/
+    background-color: hsla(240, 100%, 80%, 0.5);/* set color using hsla methode*/
+}
+
+#absolute-path-image img{
+    border: 0.1rem solid rgb(0, 0, 0); /* Black border */
+    border-radius: 1rem;   /*relevative to the root units, round the corners of the images*/ 
+    padding : 0.5rem; /*sets padding useing units relevative to the root units*/
+    background-color: hsla(240, 100%, 80%, 0.5);/* set color using hsla methode*/
+}
+
+iframe {
+    border: 0.1rem solid #2e157e; /* a border with a width of 0.1rem, a solid style, and a color of darkblue */
+}
+
+#relative-path-image figcaption{
+    color:rgb(9, 93, 90); /*change the font colour to match the border colour*/
+}
+
+#absolute-path-image figcaption{
+    color:rgb(0, 0, 0)；/*change the font colour to match the border colour*/
+}
