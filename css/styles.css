@@ -105,14 +105,14 @@ header, footer { /* the multiple element list selector for the header, footer*/
     border: 0.01rem inset #007ACC;/* border with a width of 0.01rem (relative to the root font size), a inset style, and a color of blue*/
 }
 
-#relative-path-image img{ /* using the figure element with the relative path image using the id selector */
+#relative-path-image { /* using the figure element with the relative path image using the id selector */
     border: 0.1rem solid rgb(9, 93, 90);
     border-radius: 1rem;   /*relevative to the root units, round the corners of the images*/ 
     padding : 0.5rem; /*sets padding useing units relevative to the root units*/
     background-color: hsla(240, 100%, 80%, 0.5);/* set color using hsla methode*/
 }
 
-#absolute-path-image img{
+#absolute-path-image {
     border: 0.1rem solid rgb(0, 0, 0); /* Black border */
     border-radius: 1rem;   /*relevative to the root units, round the corners of the images*/ 
     padding : 0.5rem; /*sets padding useing units relevative to the root units*/
