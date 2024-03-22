@@ -58,59 +58,65 @@
             </ul>
         </nav>
 
-        <!--this is the semantic main element that defines the body's main-->
         <main id="main">
             <section class="main-section">
-                <h2>Biography</h2>
-                  <!--This is a blockquote element has a cite attribute-->             
-                <blockquote id="bio" cite="https://en.wikipedia.org/wiki/Celine_Dion">
-                    <p class="paragraphs" style="color: black;"><b>Céline Marie Claudette Dion</b> <br> born 30<sup>th</sup><!--this is a superscript element--> March 1968. She is a <i>Canadian singer</i>. Referred to as the <strong> "Queen of Power Ballads"</strong>, she is noted for her powerful and technically skilled vocals. Her music has incorporated genres such as pop, rock, R&B, gospel, and classical music. Her recordings have been mainly in English and French, although she has also sung in Spanish, Italian, German, Latin, Japanese, and Chinese.
-                    </p>
-                </blockquote>
+                <h2>Contact</h2>
             </section>
+            <form name="form" id="form" method="post" action="contact.php">
+                <!--<fieldset>
+                    <legend>Personal Information</legend> -->
+                    <div>
+                        <label for="firstname">First Name</label>
+                        <br>
+                        <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" autofocus  required>
+                    </div>
 
-            <section class="main-section">
-                <!-- <h2>Images</h2> -->
-                <!--This is a figure element-->
-                <!-- <figure id="absolute-path-image" class="main-section-figure"> -->
-                    <!--absolute path image-->
-                    <!--alternative text attribute-->
-                   <!-- <img src="https://smartcdn.gprod.postmedia.digital/nationalpost/wp-content/uploads/2023/05/celine-dion-stiff-person-syndrome.png" alt="Canadian singer Celine Dion arriving at the Elysee Palace in Paris to be made Knight in the order of The Legion of Honour by French President Nicolas Sarkozy."> -->
-                     <!--This is a figure caption element-->
-                  <!--  <figcaption>Photo By Patric Hertzog/AFP via Getty Images</figcaption>
-                </figure>  -->
-                <!--This is a figure element-->
-                <figure id="relative-path-image" class="main-section-figure">
-                      <!--relative path image-->
-                      <img src="images/album.jpg" alt="Photo from the album Let's Talk About Love : Music from the Motion Picture">
-                       <!--This is a figure caption element-->
-                      <figcaption>"Let's Talk About Love" Single by Celine Dion</figcaption>
-                </figure> 
-            </section>
+                    <div>
+                        <label for="lasttname">Last Name</label>
+                        <br>
+                        <input type="text"  name="lastname" id="lastname" placeholder="Enter your last name"  required>
+                    </div>
 
-            <section class="main-section">
-                <blockquote id="quote" cite="https://www.imdb.com/name/nm0001144/quotes/">
-                    <h2>Quote</h2>
-                    <!--This is a blockquote element has a cite attribute-->
-                    <!--This is a q element-->
-                    <q>I love solitude and silence. It's all or nothing for me.</q>
-                    <br> 
-                    <br> 
-                        <!--This is a cite element-->
-                        <cite>
-                            Céline D., n.d.
-                        </cite>
-                </blockquote>
-            </section>
+                    <div>
+                        <label for="dob">Date of Birth</label>
+                        <br>
+                        <input type="date" name="dob" id="dob" min="1900-01-01" max="2024-03-20">
+                    </div>
+                <!--</fieldset> -->
 
-            
-           
-            <section class="main-section">
-                <h2>Media</h2>
-                <!--this is video element-->
-                <!--This is an iframe element--> <!--absolute path-->
-                <iframe style="width: 600px; height: 400px;" src="https://www.youtube.com/embed/Ua9hbpkXdPM?si=W-utSGjl4_vUu_BP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </section>
+                <label for="color">Favorite color</label>
+                <br>
+                <input type="color" id="color" name="color">
+                <br>
+
+                <label for="email">Email</label>
+                <br>
+                <input type="email" id="email" name="email" required>
+                <br>
+
+                <label for="phone">Phone Number</label>
+                <br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                <br>
+
+                <label for="contactOption">Prefered Contact Method</label>
+                <br>
+                <select id="contactOption" name="contactOption">
+                    <option value=" " disabled selected>Select</option>
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                </select>
+                <br>
+
+                <label for="message">Message</label>
+                <br>
+                <textarea id="message" name="message" rows="5" cols="30"></textarea>
+                <br>
+                <label for="robot">I am not a robot</label>
+                <input type="checkbox" name="robot" id="robot" value="true">
+                <br>
+                <input type="submit" id="submit" value="Submit">
+            </form>
         </main>
 
         <aside id="aside">
